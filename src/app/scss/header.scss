@@ -1,0 +1,93 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+  z-index: 100;
+  /*&:after {
+    position: absolute;
+    bottom: -100px;
+    height: 100px;
+    width: 100%;
+    content: "";
+    display: block;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.00) 0%, rgba(115, 115, 115, 0.82) 100%);
+  }*/
+  > div {
+    max-width: 1620px;
+    margin: 0 auto;
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #071634;
+      padding: 0 75px;
+      height: 50px;
+      border-radius: 0 0 50px 50px;
+      .header-top-left {
+        ul {
+          display: flex;
+          gap: 0 30px;
+          li {
+            color: #fff;
+            font-size: 14px;
+            padding-left: 22px;
+            &.tel {
+              background: url("/images/header/tel.png") no-repeat 0 50%;
+            }
+            &.email {
+              background: url("/images/header/email.png") no-repeat 0 50%;
+            }
+          }
+        }
+      }
+      .header-top-right {
+        dl {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0 10px;
+          dt {
+            color: #fff;
+            font-size: 14px;
+          }
+          dd {
+            ul {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 0 20px;
+            }
+          }
+        }
+      }
+    }
+    .header-bottom {
+      height: 90px;
+      padding: 0 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0 27px;
+          li {
+            a {
+              color: #666;
+              font-size: 14px;
+              font-weight: 600;
+              &:hover {
+                color: #007CFA;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
