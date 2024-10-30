@@ -3,19 +3,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 140px;
+  //height: 140px;
   background-color: #fff;
   z-index: 100;
   border-bottom: 1px solid #071634;
-  /*&:after {
-    position: absolute;
-    bottom: -100px;
-    height: 100px;
-    width: 100%;
-    content: "";
-    display: block;
-    background: linear-gradient(0deg, rgba(217, 217, 217, 0.00) 0%, rgba(115, 115, 115, 0.82) 100%);
-  }*/
   > div {
     max-width: 1620px;
     margin: 0 auto;
@@ -24,8 +15,7 @@ header {
       justify-content: space-between;
       align-items: center;
       background-color: #071634;
-      padding: 0 75px;
-      height: 50px;
+      padding: 16.5px 75px;
       border-radius: 0 0 50px 50px;
       .header-top-left {
         ul {
@@ -87,6 +77,46 @@ header {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    > div {
+      .header-top {
+        display: block;
+        .header-top-left {
+          ul {
+            display: block;
+            li {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .header-top-right {
+          dl {
+            justify-content: normal;
+            dd {
+              ul {
+                justify-content: normal;
+              }
+            }
+          }
+        }
+      }
+      .header-bottom {
+        display: block;
+        padding: 0 20px;
+        height: auto;
+        h1 {
+          padding: 20px 0;
+          text-align: center;
+        }
+        nav {
+          padding-bottom: 20px;
         }
       }
     }

@@ -2,7 +2,11 @@ import '@/app/scss/header.scss';
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
+interface Props {
+    subPage?: boolean,
+}
+
+export default function Header({subPage}: Props) {
     return (
         <header>
             <div>
@@ -30,10 +34,10 @@ export default function Header() {
                     <h1><Link href="#"><Image src="/images/header/logo.png" alt="AUGMENTED KNOWLEDGE" width={151} height={34}/></Link></h1>
                     <nav>
                         <ul>
-                            <li><Link href="#product">PROUDCT &amp; SERVEICE</Link></li>
-                            <li><Link href="#news">NEWS</Link></li>
-                            <li><Link href="#company">COMPANY</Link></li>
-                            <li><Link href="#contact">CONTACT US</Link></li>
+                            <li><Link href={subPage ? "/" : "#product"}>PRODUCT &amp; SERVICES</Link></li>
+                            <li><Link href={subPage ? "/" : "#news"}>NEWS</Link></li>
+                            <li><Link href={subPage ? "/" : "#company"}>COMPANY</Link></li>
+                            <li><Link href={subPage ? "/" : "#news"}>CONTACT US</Link></li>
                         </ul>
                     </nav>
                 </div>

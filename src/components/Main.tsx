@@ -70,13 +70,13 @@ export default function Main() {
                                 <li>Keep the same cleaner for every visit</li>
                                 <li>Book, manage & pay online</li>
                             </ul>
-                            <Link href="#">CONTACT US</Link>
+                            <Link href="#contact">CONTACT US</Link>
                         </div>
                     </div>
                 </div>
                 <div className="section-02-04">
                     <div className="title-area">
-                        <p>Work Process</p>
+                        <p>WORK PROCESS</p>
                         <h1>How We Are Working!</h1>
                     </div>
                     <ul>
@@ -111,11 +111,11 @@ export default function Main() {
                         <p><span>WORK WITH US</span></p>
                         <h1>Contact Our Best Services Team!</h1>
                     </div>
-                    <p><Link href="#">CONTACT US</Link></p>
+                    <p><Link href="#contact">CONTACT US</Link></p>
                 </div>
                 <div className="section-02-06" id="product">
                     <div className="title-area">
-                        <p><span>Product &amp; services</span></p>
+                        <p><span>PRODUCT &amp; SERVICES</span></p>
                         <h1>Entire In-house Platform and<br/> Intellectual Property</h1>
                     </div>
                     <div className="detail">
@@ -143,7 +143,7 @@ export default function Main() {
                     <div className="news-list">
                         <ul>
                             <li>
-                                <Link href="#">
+                                <Link href="/news/detail/1">
                                     <div className="image-area">
                                         <Image src="/images/@temp/news-list-sample-01.png" alt="Title" width={436} height={240}/>
                                     </div>
@@ -155,7 +155,7 @@ export default function Main() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#">
+                                <Link href="/news/detail/1">
                                     <div className="image-area">
                                         <Image src="/images/@temp/news-list-sample-02.png" alt="Title" width={436} height={240}/>
                                     </div>
@@ -167,7 +167,7 @@ export default function Main() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#">
+                                <Link href="/news/detail/1">
                                     <div className="image-area">
                                         <Image src="/images/@temp/news-list-sample-03.png" alt="Title" width={436} height={240}/>
                                     </div>
@@ -184,7 +184,7 @@ export default function Main() {
 
                 <section className="section-04-02" id="company">
                     <div className="title-area">
-                        <p><span>Company</span></p>
+                        <p><span>COMPANY</span></p>
                         <h1>Revolutionizing MRO with Digital Twins</h1>
                     </div>
                     <div className="detail-area">
@@ -205,7 +205,7 @@ export default function Main() {
 
             <section className="section-05">
                 <div className="title-area">
-                    <p><span>Major Members</span></p>
+                    <p><span>MAJOR MEMBERS</span></p>
                     <h1>Meet Our Expert</h1>
                 </div>
                 <ul>
