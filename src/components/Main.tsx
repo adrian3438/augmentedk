@@ -1,25 +1,15 @@
 import '@/app/scss/main.scss';
 import Link from "next/link";
 import Image from "next/image";
+import Section1 from "@/components/main/Section1";
 
 export default function Main() {
     return (
         <main>
-            <section className="section-01">
-                <div style={{padding:"56.25% 0 0 0",position:"relative", backgroundColor: "rgba(0,0,0,0.05)"}}>
-                    <iframe src="https://player.vimeo.com/video/1024314173??autoplay=1&loop=1&title=0&background=1&muted=1" style={{position: "absolute",top: 0,left: 0,width: "100%",height: "100%", zIndex: "-1"}}></iframe>
-                </div>
-                <div className="first-text">
-                    <p className="text-01">Augment Knowledge</p>
-                    <p className="text-02">Innovating MRO with<br/>AI-based Digital Twin Technology</p>
-                </div>
-                <div className="change-text" style={{display: 'none'}}>
-                    <p>Augmented Knowledge specializes in developing and supplying<br/> aircraft MRO simulators through AI-based Digital Twin technology for<br/> commercial and military aircraft maintenance.</p>
-                </div>
-            </section>
+            <Section1/>
 
             <section className="section-02">
-            <div className="section-02-01">
+                <div className="section-02-01">
                     <ul>
                         <li className="list-01">
                             <p>AKVIEW</p>
@@ -90,25 +80,25 @@ export default function Main() {
                         <h1>How We Are Working!</h1>
                     </div>
                     <ul>
-                        <li>
+                        <li className="process-01">
                             <dl>
                                 <dt>Analysis</dt>
                                 <dd>These services range from regular housekeeping tasks to deep cleaning, sanitation, &amp; cleaning services.</dd>
                             </dl>
                         </li>
-                        <li>
+                        <li className="process-02">
                             <dl>
                                 <dt>Create 3D Modeling</dt>
                                 <dd>These services range from regular housekeeping tasks to deep cleaning, sanitation, &amp; cleaning services.</dd>
                             </dl>
                         </li>
-                        <li>
+                        <li className="process-03">
                             <dl>
                                 <dt>Data Integration</dt>
                                 <dd>These services range from regular housekeeping tasks to deep cleaning, sanitation, &amp; cleaning services.</dd>
                             </dl>
                         </li>
-                        <li>
+                        <li className="process-04">
                             <dl>
                                 <dt>Training</dt>
                                 <dd>These services range from regular housekeeping tasks to deep cleaning, sanitation, &amp; cleaning services.</dd>
@@ -118,80 +108,83 @@ export default function Main() {
                 </div>
                 <div className="section-02-05">
                     <div className="title-area">
-                        <p>Work With Us</p>
+                        <p><span>WORK WITH US</span></p>
                         <h1>Contact Our Best Services Team!</h1>
                     </div>
                     <p><Link href="#">CONTACT US</Link></p>
                 </div>
-                <div className="section-02-06">
+                <div className="section-02-06" id="product">
                     <div className="title-area">
-                        <p>Product &amp; services</p>
+                        <p><span>Product &amp; services</span></p>
                         <h1>Entire In-house Platform and<br/> Intellectual Property</h1>
                     </div>
                     <div className="detail">
                         <p>Augmented Knowledge specializes in developing and supplying aircraft MRO simulators through <em>AI-based Digital Twin</em> technology for commercial and military aircraft maintenance.<br/>We support Web, MR, and VR content based on the cloud.</p>
-                        <Image src="" alt="Cloud-based Contents as as Service(CaaS) for Aircraft Maintenance, Training and Education" width={844} height={542}/>
+                        <Image src="/images/main/cloud-service.png" alt="Cloud-based Contents as as Service(CaaS) for Aircraft Maintenance, Training and Education" width={844} height={542}/>
                     </div>
                 </div>
             </section>
 
             <section className="section-03">
                 <div>
-                    <h1>The Cloud-based MRO Simulator<br/>AK VIEW</h1>
-                    <p><em>AKview (https://akview.augmentedk.com)</em> significantly enhances maintenance efficiency. Instead of navigating through conventional manuals, workers can specify the removal or installation task, and receive a sequential AI-driven instructional guide, complete with <em>AI-generated voice instructions and digital twins of aircraft</em> and their components. This innovative approach eliminates the time-consuming processes of searching and cross-referencing. With AKview, the specific IPC and AMM 2D drawings are available with just one click. Using AKview in the field eliminates the time spent searching for manuals and cross-referencing, streamlining operations and greatly improving productivity.</p>
+                    <div>
+                        <h1>The Cloud-based MRO Simulator<br/>AK VIEW</h1>
+                        <p><em>AKview (https://akview.augmentedk.com)</em> significantly enhances maintenance efficiency. Instead of navigating through conventional manuals, workers can specify the removal or installation task, and receive a sequential AI-driven instructional guide, complete with <em>AI-generated voice instructions and digital twins of aircraft</em> and their components. This innovative approach eliminates the time-consuming processes of searching and cross-referencing. With AKview, the specific IPC and AMM 2D drawings are available with just one click. Using AKview in the field eliminates the time spent searching for manuals and cross-referencing, streamlining operations and greatly improving productivity.</p>
+                    </div>
                 </div>
             </section>
 
-            <section className="section-04">
+            <section className="section-04" id="news">
                 <section className="section-04-01">
                     <div className="title-area">
-                        <p>NEWS</p>
+                        <p><span>NEWS</span></p>
                         <h1>Get Latest News &amp; Updates</h1>
-                        <button>View all</button>
                     </div>
-                    <ul>
-                        <li>
-                            <Link href="#">
-                                <div>
-                                    <p>Exhibition &gt; 2024-02-02</p>
-                                    <h2>Title</h2>
-                                    <span></span>
-                                </div>
-                                <div>
-                                    <Image src="" alt="Title" width={436} height={240}/>
-                                </div>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#">
-                                <div>
-                                    <p>Exhibition &gt; 2024-02-02</p>
-                                    <h2>Title</h2>
-                                    <span></span>
-                                </div>
-                                <div>
-                                    <Image src="" alt="Title" width={436} height={240}/>
-                                </div>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#">
-                                <div>
-                                    <p>Exhibition &gt; 2024-02-02</p>
-                                    <h2>Title</h2>
-                                    <span></span>
-                                </div>
-                                <div>
-                                    <Image src="" alt="Title" width={436} height={240}/>
-                                </div>
-                            </Link>
-                        </li>
-                    </ul>
+                    <div className="news-list">
+                        <ul>
+                            <li>
+                                <Link href="#">
+                                    <div className="image-area">
+                                        <Image src="/images/@temp/news-list-sample-01.png" alt="Title" width={436} height={240}/>
+                                    </div>
+                                    <div className="detail-area">
+                                        <p>Exhibition &gt; 2024-02-02</p>
+                                        <h2>AK and Kemalak Aerospace Collaborate at DSA 2024 Exhibition</h2>
+                                        <span></span>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    <div className="image-area">
+                                        <Image src="/images/@temp/news-list-sample-02.png" alt="Title" width={436} height={240}/>
+                                    </div>
+                                    <div className="detail-area">
+                                        <p>Exhibition &gt; 2024-02-02</p>
+                                        <h2>Title</h2>
+                                        <span></span>
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#">
+                                    <div className="image-area">
+                                        <Image src="/images/@temp/news-list-sample-03.png" alt="Title" width={436} height={240}/>
+                                    </div>
+                                    <div className="detail-area">
+                                        <p>Exhibition &gt; 2024-02-02</p>
+                                        <h2>Title</h2>
+                                        <span></span>
+                                    </div>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
 
-                <section className="section-04-02">
+                <section className="section-04-02" id="company">
                     <div className="title-area">
-                        <p>Company</p>
+                        <p><span>Company</span></p>
                         <h1>Revolutionizing MRO with Digital Twins</h1>
                     </div>
                     <div className="detail-area">
@@ -199,25 +192,25 @@ export default function Main() {
                             <p>In aviation maintenance, a significant amount of time is wasted searching technical manuals instead of performing actual work. Digital solutions, standardized procedures, and advanced search tools can reduce this inefficiency. The most promising advancement is digital twin remote training, which creates virtual replicas of aircraft systems for immersive training. This technology addresses the mechanic shortage, expedites training, and ensures mechanics are well-prepared for complex tasks. Embracing digital twins is essential for the future of MRO, enhancing efficiency and productivity now and in the years to come.</p>
                         </div>
                         <div className="image-area">
-                            <p><Image src="" alt="Keviin GS Jo" width={730} height={462}/></p>
-                            <p>CEO / Founder<br/> Ph.D. in Computer Science, CUNY<br/> Processor Emeritus, Dept. of Computer Science, Inha University</p>
+                            <p><Image src="/images/main/keviin-gs-jo.png" alt="Keviin GS Jo" width={730} height={462}/></p>
+                            <p className="image-info"><span>Keviin GS Jo</span> CEO / Founder<br/> Ph.D. in Computer Science, CUNY<br/> Processor Emeritus, Dept. of Computer Science, Inha University</p>
                         </div>
                     </div>
                 </section>
 
                 <section className="section-04-03">
-                    <Image src="" alt="“I find out what the world needs, Then I proceed to invent it.” - Thomas Edison" width={1290} height={632}/>
+                    <Image src="/images/main/edison.jpg" alt="“I find out what the world needs, Then I proceed to invent it.” - Thomas Edison" width={1290} height={632}/>
                 </section>
             </section>
 
             <section className="section-05">
                 <div className="title-area">
-                    <p>Major Members</p>
+                    <p><span>Major Members</span></p>
                     <h1>Meet Our Expert</h1>
                 </div>
                 <ul>
                     <li>
-                        <p className="profile-image"><Image src="" alt="profile-image" width={206} height={253}/></p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-01.png" alt="profile-image" width={206} height={253}/></p>
                         <div>
                             <p className="name">Kevin Geunski Jo</p>
                             <p className="position">CEO &amp; Founder</p>
@@ -225,7 +218,7 @@ export default function Main() {
                         </div>
                     </li>
                     <li>
-                        <p className="profile-image"><Image src="" alt="profile-image" width={206} height={253}/></p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-01.png" alt="profile-image" width={206} height={253}/></p>
                         <div>
                             <p className="name">Younghoon Yu</p>
                             <p className="position">Chief Technology Officer</p>
@@ -233,7 +226,7 @@ export default function Main() {
                         </div>
                     </li>
                     <li>
-                        <p className="profile-image"><Image src="" alt="profile-image" width={206} height={253}/></p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-01.png" alt="profile-image" width={206} height={253}/></p>
                         <div>
                             <p className="name">Suzie Lee</p>
                             <p className="position">Global Business Manager</p>
@@ -241,7 +234,7 @@ export default function Main() {
                         </div>
                     </li>
                     <li>
-                        <p className="profile-image"><Image src="" alt="profile-image" width={206} height={253}/></p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-01.png" alt="profile-image" width={206} height={253}/></p>
                         <div>
                             <p className="name">Miri Kim</p>
                             <p className="position">Global Business Manager</p>
@@ -255,24 +248,32 @@ export default function Main() {
                 <h1>GLOBAL MENTORS</h1>
                 <ul>
                     <li>
-                        <p><Image src="" alt="profile-image" width={173} height={220}/></p>
-                        <p className="name">Nicolas Chaudron</p>
-                        <p className="role">Id invest Partner</p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-02.svg" alt="profile-image" width={173} height={220}/></p>
+                        <div>
+                            <p className="name">Nicolas Chaudron</p>
+                            <p className="role">Id invest Partner</p>
+                        </div>
                     </li>
                     <li>
-                        <p><Image src="" alt="profile-image" width={173} height={220}/></p>
-                        <p className="name">Kevin Chong</p>
-                        <p className="role">Samsung Strategy &amp; Innovation Center Senior Director of Corporate Development</p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-02.svg" alt="profile-image" width={173} height={220}/></p>
+                        <div>
+                            <p className="name">Kevin Chong</p>
+                            <p className="role">Samsung Strategy &amp; Innovation Center Senior Director of Corporate Development</p>
+                        </div>
                     </li>
                     <li>
-                        <p><Image src="" alt="profile-image" width={173} height={220}/></p>
-                        <p className="name">Geo Finch</p>
-                        <p className="role">IUS Treasury OTA Former Vice President&CFO of Lockheed Martin Finance</p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-02.svg" alt="profile-image" width={173} height={220}/></p>
+                        <div>
+                            <p className="name">Geo Finch</p>
+                            <p className="role">IUS Treasury OTA Former Vice President&CFO of Lockheed Martin Finance</p>
+                        </div>
                     </li>
                     <li>
-                        <p><Image src="" alt="profile-image" width={173} height={220}/></p>
-                        <p className="name">Jimmy Kim</p>
-                        <p className="role">SparkLabs Co-Founder&amp;General Partner</p>
+                        <p className="profile-image"><Image src="/images/main/profile-image-02.svg" alt="profile-image" width={173} height={220}/></p>
+                        <div>
+                            <p className="name">Jimmy Kim</p>
+                            <p className="role">SparkLabs Co-Founder&amp;General Partner</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -280,7 +281,7 @@ export default function Main() {
             <section className="section-07">
                 <div className="section-07-01">
                     <div className="title-area">
-                        <p>CONTACT US</p>
+                        <p><span>CONTACT US</span></p>
                         <h1>Augmented Knowledge</h1>
                     </div>
                     <p>
@@ -291,31 +292,31 @@ export default function Main() {
                         맵 영역
                     </div>
                 </div>
-                <div className="section-07-02">
+                <div className="section-07-02" id="contact">
                     <h2>How we can help you ?</h2>
-                    <div>
+                    <div className="input-area">
                         <div>
-                            <label htmlFor="">YOUR NAME (*) </label>
-                            <input type="text" placeholder="What’s your good name ? "/>
+                            <label htmlFor="name">YOUR NAME (*) </label>
+                            <input type="text" placeholder="What’s your good name ?" id="name"/>
                         </div>
                         <div>
-                            <label htmlFor="">YOUR EMAIL ADDRESS (*)</label>
-                            <input type="text" placeholder="Enter your email address "/>
+                            <label htmlFor="email">YOUR EMAIL ADDRESS (*)</label>
+                            <input type="text" placeholder="Enter your email address" id="email"/>
                         </div>
                         <div>
-                            <label htmlFor="">YOUR PHONE NUMBER (*)</label>
-                            <input type="text" placeholder="What’s your good name ? "/>
+                            <label htmlFor="phoneNumber">YOUR PHONE NUMBER (*)</label>
+                            <input type="text" placeholder="What’s your phoen number?" id="phoneNumber"/>
                         </div>
                         <div>
-                            <label htmlFor="">YOUR SUBJECT(*)</label>
-                            <input type="text" placeholder="Enter your email address"/>
-                        </div>
-                        <div>
-                            <label htmlFor="">YOUR MESSAGE (*)</label>
-                            <textarea placeholder="Describe about your message"></textarea>
+                            <label htmlFor="subject">YOUR SUBJECT(*)</label>
+                            <input type="text" placeholder="Enter your subject" id="subject"/>
                         </div>
                     </div>
-                    <div>
+                    <div className="text-area">
+                        <label htmlFor="message">YOUR MESSAGE (*)</label>
+                        <textarea placeholder="Describe about your message" id="message"></textarea>
+                    </div>
+                    <div className="submit-area">
                         <p>We are committed to protecting your privacy.<br/> We will never collect information about you without your explicit consent.</p>
                         <button type="submit">SUBMIT</button>
                     </div>

@@ -6,6 +6,7 @@ header {
   height: 140px;
   background-color: #fff;
   z-index: 100;
+  border-bottom: 1px solid #071634;
   /*&:after {
     position: absolute;
     bottom: -100px;
@@ -81,7 +82,7 @@ header {
               color: #666;
               font-size: 14px;
               font-weight: 600;
-              &:hover {
+              &:hover, &:focus, &:active {
                 color: #007CFA;
               }
             }

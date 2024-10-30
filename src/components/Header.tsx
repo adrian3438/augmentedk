@@ -30,10 +30,10 @@ export default function Header() {
                     <h1><Link href="#"><Image src="/images/header/logo.png" alt="AUGMENTED KNOWLEDGE" width={151} height={34}/></Link></h1>
                     <nav>
                         <ul>
-                            <li><Link href="#">PROUDCT &amp; SERVEICE</Link></li>
-                            <li><Link href="#">NEWS</Link></li>
-                            <li><Link href="#">COMPANY</Link></li>
-                            <li><Link href="#">CONTACT US</Link></li>
+                            <li><Link href="#product">PROUDCT &amp; SERVEICE</Link></li>
+                            <li><Link href="#news">NEWS</Link></li>
+                            <li><Link href="#company">COMPANY</Link></li>
+                            <li><Link href="#contact">CONTACT US</Link></li>
                         </ul>
                     </nav>
                 </div>
