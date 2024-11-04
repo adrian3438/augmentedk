@@ -289,7 +289,7 @@ export default function Main() {
                         (주)증강지능은 인하대학교 인공지능연구실에서 창업한 기업으로, 1991년 이후 30여년간 연구해온 인공지능 기술을 확장현실 기술과 융합한 제품을 4차 산업 분야에 적용하기 위해 노력하고 있습니다.
                     </p>
                     <div className="map">
-                        맵 영역
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.2438028619354!2d126.6574478!3d37.3840662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b771d8b95edd7%3A0xab04db71b23e664d!2z7J247ZWY64yA7ZWZ6rWQIO2VreqzteyasOyjvOycte2Vqey6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1730708599149!5m2!1sko!2skr" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade" style={{width:"100%", height:"100%"}}></iframe>
                     </div>
                 </div>
                 <div className="section-07-02" id="contact">
